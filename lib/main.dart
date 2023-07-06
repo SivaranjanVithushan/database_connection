@@ -1,3 +1,4 @@
+import 'package:database_connection/view/home/home_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      title: 'Flutter web app',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        textTheme: Theme.of(context).textTheme.apply(
+              fontFamily: 'Open Sans',
+            ),
+      ),
+      home: HomeView(),
+    );
+    // Title
   }
 }
