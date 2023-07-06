@@ -8,10 +8,13 @@ class NavigationBars extends StatelessWidget {
     return Container(
       height: 100,
       child: const Row(children: <Widget>[
-        SizedBox(
-            height: 80,
-            width: 150,
-            child: Image(image: AssetImage('assets/images/logo.png'))),
+        Hero(
+          tag: 'logo',
+          child: SizedBox(
+              height: 80,
+              width: 150,
+              child: Image(image: AssetImage('assets/images/logo.png'))),
+        ),
         SizedBox(width: 24),
         Spacer(),
         _NavBarItem('Episodes'),

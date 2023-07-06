@@ -5,6 +5,8 @@ import 'package:database_connection/widgets/navigation_bar/navigation_bar.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget {
+  static const String id = 'Home_screen';
+
   const HomeView({super.key});
 
   @override
